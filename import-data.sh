@@ -1,10 +1,10 @@
 #!/bin/bash
 
-npx elasticdump \
+elasticdump \
     --input=document_mapping.json \
     --output=http://localhost:9200/document \
     --type=mapping
-npx elasticdump \
+elasticdump \
     --input=document.json \
     --output=http://localhost:9200/document \
     --type=data
